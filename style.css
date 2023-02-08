@@ -68,13 +68,13 @@ li {
     margin: 0 auto;
     margin-top: 30px;
     padding: 20px;
-    border-radius: 5%;    
+    border-radius: 5%;
+    box-shadow: black 4px 4px 20px;
 }
 
 #cta {
     color: white;
     text-align: center;
-    padding-top: 20px;
     background-color: var(--DesaturatedBlue);
     padding: 30px 0;
 }
@@ -170,11 +170,11 @@ li {
 }
 
 .footer-logo {
-    filter:brightness(0) invert(1);
+    filter: brightness(0) invert(1);
     padding: 20px 0;
 }
 
-.footer-icons{
+.footer-icons {
     margin-right: 10px;
 }
 
@@ -182,3 +182,118 @@ li {
     padding-top: 20px;
 }
 
+.btn:hover {
+    opacity: .7;
+}
+
+.ionic-icon {
+    padding: 10px;
+    margin: 0 10px;
+    border: 1px solid white;
+    border-radius: 50%;
+}
+
+@media screen and (min-width: 650px) {
+
+    #hero,
+    #features {
+        justify-content: space-between;
+        flex-direction: row;
+        align-items: center;
+        padding-top: 5%;
+    }
+
+    .hero-img,
+    #image-area {
+        width: 50%;
+    }
+
+    .hero-text,
+    #text-area {
+        text-align: left;
+        width: 40%;
+    }
+
+    .form {
+        flex-direction: row;
+    }
+
+    #hero input,
+    #hero a {
+        padding: 10px 15px;
+        margin: 0 10px 0 0;
+    }
+
+    .illustration-img {
+        display: block;
+    }
+
+    .background {
+        background: url('images/bg-curve-desktop.svg') no-repeat center;
+        background-size: cover;
+    }
+
+    h2,
+    h3 {
+        font-size: 2rem;
+    }
+
+    .hero-text p {
+        font-size: 1rem;
+        padding-bottom: 20px;
+    }
+
+    h3,
+    .tmt {
+        margin: 0;
+        justify-content: flex-start;
+        text-align: left;
+    }
+
+    #card {
+        margin: 0;
+        margin-top: 30px;
+        border-radius: 25px;
+        width: 70%;
+    }
+
+    #cta p {
+        padding: 0;
+        text-align: left;
+    }
+
+    .cta-flex {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .cta-text {
+        width: 40%;
+    }
+
+    .form-sm {
+        width: 50%;
+        margin: 0;
+        flex-direction: column;
+    }
+
+    .form-sm input {
+        width: 80%;
+    }
+
+    .btn-large {
+        width: 40%;
+        margin: 20px 0 0 0;
+    }
+
+    .footer-logo p {
+        padding-top: 10px;
+    }
+
+    .footer {
+        display: flex;
+        justify-content: space-between;
+    }
+
+}
