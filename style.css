@@ -10,12 +10,24 @@
 }
 
 :root {
-    --VeryDarkBlue: hsl(243, 87%, 12%);
-    --DesaturatedBlue: hsl(238, 22%, 44%);
-    --BrightBlue: hsl(224, 93%, 58%);
-    --ModerateCyan: hsl(170, 45%, 43%);
-    --LightGrayishBlue: hsl(240, 75%, 98%);
-    --LightGray: hsl(0, 0%, 75%);
+    --VeryDarkBlue: hsl(243, 87%, 12%) !important;
+    --DesaturatedBlue: hsl(238, 22%, 44%) !important;
+    --BrightBlue: hsl(224, 93%, 58%) !important;
+    --ModerateCyan: hsl(170, 45%, 43%) !important;
+    --LightGrayishBlue: hsl(240, 75%, 98%) !important;
+    --LightGray: hsl(0, 0%, 75%) !important;
+}
+
+body {
+    font-family: 'Open Sans';
+}
+
+h2 {
+    font-size: 1.5rem;
+}
+
+h3 {
+    text-align: center;
 }
 
 img {
@@ -27,7 +39,133 @@ li {
     display: inline;
 }
 
+#hero,
+#features {
+    display: flex;
+    flex-direction: column-reverse;
+    padding: 50px 0;
+}
+
+#hero {
+    text-align: center;
+}
+
+#text-area p {
+    margin: 20px 0;
+}
+
+
+#text-area a {
+    text-decoration: none;
+    color: var(--ModerateCyan);
+    padding-right: 5px;
+}
+
+#card {
+    background-color: white;
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 30px;
+    padding: 20px;
+    border-radius: 5%;    
+}
+
+#cta {
+    color: white;
+    text-align: center;
+    padding-top: 20px;
+    background-color: var(--DesaturatedBlue);
+    padding: 30px 0;
+}
+
+#cta p {
+    padding: 20px 10px;
+}
+
+#footer {
+    background-color: var(--VeryDarkBlue);
+    color: white;
+    padding: 20px 0;
+}
+
+.background {
+    background: url(images/bg-curve-mobile.svg) no-repeat center;
+    background-size: cover;
+}
+
 .container {
     width: 90%;
     margin: auto;
 }
+
+.illustration-img {
+    margin-bottom: 20px;
+}
+
+.hero-text p {
+    font-size: 1.1rem;
+    padding: 10px 0;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form input {
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+
+.form a {
+    color: white;
+    text-decoration: none;
+    margin-top: 10px;
+    background-color: var(--BrightBlue);
+    font-family: 'Raleway';
+    font-weight: 700;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.tmt {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.testimonial-image {
+    float: left;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.name {
+    font-weight: 700;
+}
+
+.designation {
+    font-size: .6rem;
+}
+
+.form-sm {
+    width: 70%;
+    margin: 0 auto;
+}
+
+.footer-logo {
+    filter:brightness(0) invert(1);
+    padding: 20px 0;
+}
+
+.footer-icons{
+    margin-right: 10px;
+}
+
+.block {
+    padding-top: 20px;
+}
+
