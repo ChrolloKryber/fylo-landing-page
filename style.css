@@ -37,6 +37,7 @@ img {
 li {
     list-style: none;
     display: inline;
+    padding: 0px 5px;
 }
 
 #hero,
@@ -86,6 +87,18 @@ li {
     background-color: var(--VeryDarkBlue);
     color: white;
     padding: 20px 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: small;
+    padding-top: 20px;
+}
+
+.nav-logo {
+    width: 40%;
 }
 
 .background {
